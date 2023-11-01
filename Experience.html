@@ -11,7 +11,7 @@
 
 
 
-<title>Tingyi Li</title>
+<title>Experience</title>
 
 <script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -221,6 +224,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -228,6 +294,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -274,43 +350,90 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Tingyi Li</h1>
+<h1 class="title toc-ignore">Experience</h1>
 
 </div>
 
 
-<div id="mailman-school-of-public-health-columbia-university"
-class="section level3">
-<h3>Mailman School of Public Health, Columbia University</h3>
+<div id="education" class="section level3">
+<h3>Education</h3>
+<p><strong>Columbia University, New York, NY</strong> [<em>Expected
+2024</em>]</p>
+<p>Master of Public Health (MPH) in Biostatistics</p>
+<p>Certificate: Comparative Outcome Effectiveness Research (CEOR)</p>
+<p>Courses: Applied Regression (Linear Regression and Logistic
+regression), Introduction to Mathematical Statistics, Analysis of
+Large-Scale Data, Analysis of Categorical Data, Decision Analysis for
+Clinical and Public Health Practice, Statistical Computing with SAS</p>
+<p><strong>University of Wisconsin Madison, WI</strong> [<em>Sep 2018 -
+May 2022</em>]</p>
+<p>Bachelor of Arts (B.A.) in Psychology</p>
+<p>GPA 3.74</p>
+<p>Courses: Regression, Calculus, Linear Algebra, Applied Stats-Life
+Science, Stats: Measurement in Economics, Behavioral Neuroscience</p>
 </div>
-<div id="second-year-student-in-mph-biostatistics"
-class="section level3">
-<h3>Second-year student in MPH Biostatistics</h3>
-<p><br> <img src="image/Tingyi.jpeg" style="width:75.0%" /></p>
-<p><br></p>
-<p>I have attended my undergraduate school at <a
-href="https://www.wisc.edu/">University of Wisconsin-Madison</a>, and
-now I am a MPH student majoring in Biostatistics at <a
-href="https://www.publichealth.columbia.edu/academics/departments/biostatistics">Columbia
-Univeristy</a></p>
-<p><br></p>
+<div id="work-experience" class="section level3">
+<h3>Work Experience</h3>
+<p><strong>Part time Assistant, IQVIA</strong> [<em>July 2021 - Aug
+2021</em>]</p>
+<p>knowledge about breast cancer and current treatments for the
+disease.</p>
+<ul>
+<li><p>Analyzed consulting methods (e.g., pyramid method) for different
+insurance companies.</p></li>
+<li><p>Created R Markdown template to generate descriptive analysis
+tables.</p></li>
+</ul>
+<p><strong>Seasonal Employee, NorthShore University
+HealthSystem</strong> [<em>June 2023-Aug 2023</em>]</p>
+<ul>
+<li><p>Obtained data from three databases including UKBiobank, HGMD
+(Human Genetic Mutation Database), and ClinVar.</p></li>
+<li><p>Used Python to handle missing values and extract relevant
+variables from variants of ATM gene.</p></li>
+<li><p>Generated fisher-exact tests for the association between SNP
+carriers and diseases by computing odds ratio and p-value.</p></li>
+</ul>
 </div>
-<div id="academic-and-professional-experience" class="section level3">
-<h3>Academic and Professional Experience</h3>
-<p>The details about my experience are here: <a
-href="./CV/Li_Tingyi_Resume.pdf">CV</a></p>
-<p>Here’s my <a href="https://github.com/Tingyi0920">github
-repository</a></p>
-<p><br></p>
-</div>
-<div id="contact-information" class="section level3">
-<h3>Contact Information</h3>
-<p>Email: <a
-href="mailto:tl3195@cumc.columbia.edu">tl3195@cumc.columbia.edu</a></p>
+<div id="project-experience" class="section level3">
+<h3>Project Experience</h3>
+<p><strong>Heart disease, Yale University, Supervisor: Prof.Shuangge
+Ma</strong> [<em>Aug 2021 - Dec 2021</em>]</p>
+<ul>
+<li><p>Obtained data with 303 observations and 76 attributes from UCI
+machine Learning Repository.</p></li>
+<li><p>Created logistic regression to assess the relative risks of heart
+disease by using R.</p></li>
+<li><p>Concluded that chest pain type, ST depression and maximum heart
+rate are saliant contributors to indicate the occurrence of heart
+disease.</p></li>
+</ul>
+<p><strong>Cervical disease, Yale University, Supervisor: Prof.Shuangge
+Ma</strong> [<em>Aug 2021 - Dec 2021</em>]</p>
+<ul>
+<li><p>Collected patients’ cervical data from Venezuela.</p></li>
+<li><p>Utilized R to conduct descriptive analysis for the data.</p></li>
+<li><p>Created logistic regression model to investigate risk factors of
+cervical diseases.</p></li>
+</ul>
+<p><strong>Children depression, Beijing Normal University, Supervisor:
+Prof.Jinbao Zhang</strong> [<em>Aug 2020 - Feb 2021</em>]</p>
+<ul>
+<li><p>Collected children’s anxiety data aging from eight to fourteen
+years old.</p></li>
+<li><p>Designed statistical analysis plan for investigating the
+relationship between anxiety and children.</p></li>
+<li><p>Conducted logistic regression to find risk factors of children
+depression.</p></li>
+<li><p>Concluded that less anxiety in children if having better
+relationship with teachers.</p></li>
+</ul>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -343,6 +466,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

@@ -1,0 +1,69 @@
+---
+title: "Experience"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+### Education
+**Columbia University, New York, NY** [*Expected 2024*] 
+
+Master of Public Health (MPH) in Biostatistics
+
+Certificate: Comparative Outcome Effectiveness Research (CEOR)
+
+Courses: Applied Regression (Linear Regression and Logistic regression), Introduction to Mathematical Statistics, Analysis of Large-Scale Data, Analysis of Categorical Data, Decision Analysis for Clinical and Public Health Practice, Statistical Computing with SAS
+
+**University of Wisconsin Madison, WI** [*Sep 2018 - May 2022*]
+
+Bachelor of Arts (B.A.) in Psychology
+
+GPA 3.74
+
+Courses: Regression, Calculus, Linear Algebra, Applied Stats-Life Science, Stats: Measurement in Economics, Behavioral Neuroscience
+
+### Work Experience
+**Part time Assistant, IQVIA** [*July 2021 - Aug 2021*]
+
+knowledge about breast cancer and current treatments for the disease.
+
+* Analyzed consulting methods (e.g., pyramid method) for different insurance companies.
+
+* Created R Markdown template to generate descriptive analysis tables.
+
+**Seasonal Employee, NorthShore University HealthSystem** [*June 2023-Aug 2023*]
+
+* Obtained data from three databases including UKBiobank, HGMD (Human Genetic Mutation Database), and ClinVar.
+
+* Used Python to handle missing values and extract relevant variables from variants of ATM gene.
+
+* Generated fisher-exact tests for the association between SNP carriers and diseases by computing odds ratio and p-value.
+
+### Project Experience
+**Heart disease, Yale University, Supervisor: Prof.Shuangge Ma** [*Aug 2021 - Dec 2021*]
+
+* Obtained data with 303 observations and 76 attributes from UCI machine Learning Repository.
+
+* Created logistic regression to assess the relative risks of heart disease by using R.
+
+* Concluded that chest pain type, ST depression and maximum heart rate are saliant contributors to indicate the occurrence of heart disease.
+
+**Cervical disease, Yale University, Supervisor: Prof.Shuangge Ma** [*Aug 2021 - Dec 2021*]
+
+* Collected patients’ cervical data from Venezuela.
+
+* Utilized R to conduct descriptive analysis for the data.
+
+* Created logistic regression model to investigate risk factors of cervical diseases.
+
+**Children depression, Beijing Normal University, Supervisor: Prof.Jinbao Zhang** [*Aug 2020 - Feb 2021*]
+
+* Collected children’s anxiety data aging from eight to fourteen years old.
+
+* Designed statistical analysis plan for investigating the relationship between anxiety and children.
+
+* Conducted logistic regression to find risk factors of children depression.
+
+* Concluded that less anxiety in children if having better relationship with teachers.
+
