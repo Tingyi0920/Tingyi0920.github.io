@@ -1,0 +1,29 @@
+---
+title: "Tingyi Li"
+output: 
+  html_document
+---
+
+### Mailman School of Public Health, Columbia University
+### Second-year student in MPH Biostatistics
+
+<br>
+![](image/Tingyi.jpeg){width=75%}
+
+<br>
+
+I have attended my undergraduate school at [University of Wisconsin-Madison](https://www.wisc.edu/), and now I am a MPH student majoring in Biostatistics at [Columbia Univeristy](https://www.publichealth.columbia.edu/academics/departments/biostatistics)
+
+<br>
+
+### Academic and Professional Experience
+
+The details about my experience are here: [CV](./CV/Li_Tingyi_Resume.pdf)
+
+Here's my [github repository](https://github.com/Tingyi0920)
+
+<br>
+
+### Contact Information
+
+Email: [tl3195@cumc.columbia.edu](mailto:tl3195@cumc.columbia.edu)
