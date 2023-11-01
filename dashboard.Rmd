@@ -1,0 +1,88 @@
+---
+title: "NYC Restaurant Inspection Result Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+library(lubridate)
+library(p8105.datasets)
+
+```
+
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+rest_inspec |>
+  filter(violation_code %in% c("02B", "02G")) |>
+  mutate(time = format(inspection_date, "%Y-%m")) |>
+  group_by(time, violation_code) |>
+  summarise(count = n()) |>
+  ungroup() |>
+  mutate(violation_code = recode(violation_code, "02B" = "Hot food item not held at or above 140.", "02G" = "Cold food item held above 41")) |>
+  plot_ly(x = ~time, y = ~count,
+          color = ~violation_code, type = "scatter", 
+          mode = "lines", alpha = 0.5) |>
+  layout(title =  "Temperature Violations over Time in NYC Restaurants",
+         xaxis = list(title = "time"),
+         yaxis = list(title = "count")
+         )
+```
+
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+rest_inspec|>
+  janitor::clean_names()|>
+  mutate(inspection_date = as.Date(inspection_date)) |>
+  mutate(year=year(inspection_date))|>
+  filter(year == 2016, 
+         !is.na(score), score >= 0, boro != "Missing")|>
+  mutate(grade = case_when(
+    score >= 0 & score <= 13 ~ "A",
+    score >= 14 & score <= 27 ~ "B",
+    score >= 28 ~ "C"
+  ))|>
+  group_by(boro,year,grade)|>
+  summarise(count=n())|>
+  plot_ly(x = ~boro, y = ~count, color = ~grade, type = "bar")|>
+  layout(
+    title = "Number of Restaurants by Grade in NYC Boroughs in 2016",
+    xaxis = list(title = "Borough"),
+    yaxis = list(title = "Number")
+  )
+```
+
+### Chart C
+
+```{r, fig.width=60}
+rest_inspec|>
+  filter(violation_code %in% c("02B", "02G"))|>
+  group_by(violation_code, cuisine_description)|>
+  summarise(count=n())|>
+  ungroup()|>
+  filter(count > 500, cuisine_description != "Other", cuisine_description != "Sandwiches/Salads/Mixed Buffet")|>
+  mutate(violation_code = recode(violation_code, "02B" = "Hot food item not held at or above 140.", "02G" = "Cold food item held above 41"))|>
+  mutate(cuisine_description = fct_reorder(cuisine_description, count))|>
+  mutate(cuisine_description = recode(
+    cuisine_description, "Latin (Cuban, Dominican, Puerto Rican, South & Central American)" = "Latin"))|>
+  plot_ly(x = ~count, y = ~cuisine_description, color = ~violation_code,
+          type = "bar", alpha = 0.75)|>
+  layout(title = "Top 14 cuisines with Temperature Violations in NYC Boroughs",
+         xaxis = list(title = "count"),
+         yaxis = list(title = "cuisine")
+         )
+```
+
